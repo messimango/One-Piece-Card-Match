@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,200;1,300;1,600&family=Rubik:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #FFA500;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(34, 35, 39);
+}
+
+.nav {
+    width: 480px;
+    height: 70px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.menu-box {
+    display: flex;
+    width: 430px;
+}
+
+.links {
+    list-style: none;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.links a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.icons {
+    color: rgb(34, 35, 39);
+    line-height: 75px;
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+    transition: 1s;
+    text-align: center;   
+}
+
+.links:hover a .icons {
+    transform: translateY(-20px);
+}
+
+.name {
+    position: absolute;
+    color: transparent;    
+    font-size: 0.75rem;
+    transition: 1s;
+}
+
+.links:hover .name {
+    position: absolute;
+    color: rgb(34, 35, 39);
+    font-size: 0.75rem;
+    transition: 1s;
+}
+
+
+/* game */
+
+.cardgame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-grid {
+    width: 750px;
+    border: 2px red solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    width: 80px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+/* Footer */
+
+
+footer  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer-box {    
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+footer .fa {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.author {
+    color: red;
+}
